@@ -1,13 +1,14 @@
 import BinanceFeedHandler from './feedhandlers/BinanceFeedHandler'
 import { BitMEXFeedhandler } from './feedhandlers/BitMEXFeedHandler'
 import { FeedHandler, OrderBookEvent, OrderBookEventHandler, TradeEvent, TradeEventHandler } from './feedhandlers/Feedhandler'
+import HyperliquidFeedHandler from './feedhandlers/HyperliquidFeedHandler'
 import KrakenFeedHandler from './feedhandlers/KrakenFeedHandler'
 
 export class FeedManager {
     private _feedhandlers: Map<string,FeedHandler> = new Map()
     private _orderBookEventHandlers: OrderBookEventHandler[] = []
     private _tradeEventHandlers: TradeEventHandler[] = []
-    
+
     private _exchange: string | undefined
     private _symbol: string | undefined
 
@@ -15,6 +16,7 @@ export class FeedManager {
         this.registerFeedhandler(new BitMEXFeedhandler())
         this.registerFeedhandler(new BinanceFeedHandler())
         this.registerFeedhandler(new KrakenFeedHandler())
+        this.registerFeedhandler(new HyperliquidFeedHandler())
     }
 
     private registerFeedhandler(fh: FeedHandler) {

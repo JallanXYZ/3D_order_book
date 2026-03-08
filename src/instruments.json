@@ -8420,5 +8420,27 @@
       "symbol": "ZRX/XBT",
       "tickSize": 1e-8
     }
+  ],
+  "Hyperliquid": [
+    { "symbol": "BTC", "tickSize": 1 },
+    { "symbol": "ETH", "tickSize": 0.1 },
+    { "symbol": "SOL", "tickSize": 0.01 },
+    { "symbol": "BNB", "tickSize": 0.1 },
+    { "symbol": "AVAX", "tickSize": 0.01 },
+    { "symbol": "DOGE", "tickSize": 0.00001 },
+    { "symbol": "LINK", "tickSize": 0.001 },
+    { "symbol": "ARB", "tickSize": 0.0001 },
+    { "symbol": "OP", "tickSize": 0.0001 },
+    { "symbol": "SUI", "tickSize": 0.0001 },
+    { "symbol": "APT", "tickSize": 0.001 },
+    { "symbol": "INJ", "tickSize": 0.001 },
+    { "symbol": "MATIC", "tickSize": 0.00001 },
+    { "symbol": "NEAR", "tickSize": 0.001 },
+    { "symbol": "ATOM", "tickSize": 0.001 },
+    { "symbol": "LTC", "tickSize": 0.01 },
+    { "symbol": "WIF", "tickSize": 0.0001 },
+    { "symbol": "PEPE", "tickSize": 1e-8 },
+    { "symbol": "TIA", "tickSize": 0.001 },
+    { "symbol": "SEI", "tickSize": 0.0001 }
   ]
 }
