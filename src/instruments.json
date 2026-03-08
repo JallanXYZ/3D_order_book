@@ -8422,25 +8422,765 @@
     }
   ],
   "Hyperliquid": [
-    { "symbol": "BTC", "tickSize": 1 },
-    { "symbol": "ETH", "tickSize": 0.1 },
-    { "symbol": "SOL", "tickSize": 0.01 },
-    { "symbol": "BNB", "tickSize": 0.1 },
-    { "symbol": "AVAX", "tickSize": 0.01 },
-    { "symbol": "DOGE", "tickSize": 0.00001 },
-    { "symbol": "LINK", "tickSize": 0.001 },
-    { "symbol": "ARB", "tickSize": 0.0001 },
-    { "symbol": "OP", "tickSize": 0.0001 },
-    { "symbol": "SUI", "tickSize": 0.0001 },
-    { "symbol": "APT", "tickSize": 0.001 },
-    { "symbol": "INJ", "tickSize": 0.001 },
-    { "symbol": "MATIC", "tickSize": 0.00001 },
-    { "symbol": "NEAR", "tickSize": 0.001 },
-    { "symbol": "ATOM", "tickSize": 0.001 },
-    { "symbol": "LTC", "tickSize": 0.01 },
-    { "symbol": "WIF", "tickSize": 0.0001 },
-    { "symbol": "PEPE", "tickSize": 1e-8 },
-    { "symbol": "TIA", "tickSize": 0.001 },
-    { "symbol": "SEI", "tickSize": 0.0001 }
+    {
+      "symbol": "0G",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "2Z",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "AAVE",
+      "tickSize": 0.01
+    },
+    {
+      "symbol": "ACE",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "ADA",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "AERO",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "AIXBT",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "ALGO",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "ALT",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "ANIME",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "APE",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "APEX",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "APT",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "AR",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "ARB",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "ARK",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "ASTER",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "ATOM",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "AVAX",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "AVNT",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "AXS",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "AZTEC",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "BABY",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "BANANA",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "BCH",
+      "tickSize": 0.01
+    },
+    {
+      "symbol": "BERA",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "BIGTIME",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "BIO",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "BLAST",
+      "tickSize": 1e-8
+    },
+    {
+      "symbol": "BLUR",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "BNB",
+      "tickSize": 0.01
+    },
+    {
+      "symbol": "BOME",
+      "tickSize": 1e-8
+    },
+    {
+      "symbol": "BRETT",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "BSV",
+      "tickSize": 0.001
+    },
+    {
+      "symbol": "BTC",
+      "tickSize": 1
+    },
+    {
+      "symbol": "CAKE",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "CC",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "CELO",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "CFX",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "CHILLGUY",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "COMP",
+      "tickSize": 0.001
+    },
+    {
+      "symbol": "CRV",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "DASH",
+      "tickSize": 0.001
+    },
+    {
+      "symbol": "DOGE",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "DOOD",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "DOT",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "DYDX",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "DYM",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "EIGEN",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "ENA",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "ENS",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "ETC",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "ETH",
+      "tickSize": 0.1
+    },
+    {
+      "symbol": "ETHFI",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "FARTCOIN",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "FET",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "FIL",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "FOGO",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "FTT",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "GALA",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "GAS",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "GMT",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "GMX",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "GOAT",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "GRASS",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "GRIFFAIN",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "HBAR",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "HEMI",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "HMSTR",
+      "tickSize": 1e-8
+    },
+    {
+      "symbol": "HYPE",
+      "tickSize": 0.001
+    },
+    {
+      "symbol": "HYPER",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "ICP",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "IMX",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "INIT",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "INJ",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "IO",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "IOTA",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "IP",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "JTO",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "JUP",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "KAITO",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "KAS",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "kBONK",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "kFLOKI",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "kLUNC",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "kNEIRO",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "kPEPE",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "kSHIB",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "LAYER",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "LDO",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "LINEA",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "LINK",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "LIT",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "LTC",
+      "tickSize": 0.001
+    },
+    {
+      "symbol": "MANTA",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "MAV",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "MAVIA",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "ME",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "MEGA",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "MELANIA",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "MEME",
+      "tickSize": 1e-8
+    },
+    {
+      "symbol": "MERL",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "MET",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "MEW",
+      "tickSize": 1e-8
+    },
+    {
+      "symbol": "MINA",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "MNT",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "MON",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "MOODENG",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "MORPHO",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "MOVE",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "NEAR",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "NEO",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "NIL",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "NOT",
+      "tickSize": 1e-8
+    },
+    {
+      "symbol": "NXPC",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "ONDO",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "OP",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "ORDI",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "PAXG",
+      "tickSize": 0.1
+    },
+    {
+      "symbol": "PENDLE",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "PENGU",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "PEOPLE",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "PNUT",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "POL",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "POLYX",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "POPCAT",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "PROMPT",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "PROVE",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "PUMP",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "PURR",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "PYTH",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "RENDER",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "RESOLV",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "REZ",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "RSR",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "RUNE",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "S",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "SAGA",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "SAND",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "SCR",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "SEI",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "SKR",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "SKY",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "SNX",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "SOL",
+      "tickSize": 0.001
+    },
+    {
+      "symbol": "SOPH",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "SPX",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "STABLE",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "STBL",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "STRK",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "STX",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "SUI",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "SUPER",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "SUSHI",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "SYRUP",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "TAO",
+      "tickSize": 0.01
+    },
+    {
+      "symbol": "TIA",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "TNSR",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "TON",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "TRB",
+      "tickSize": 0.001
+    },
+    {
+      "symbol": "TRUMP",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "TRX",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "TST",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "TURBO",
+      "tickSize": 1e-8
+    },
+    {
+      "symbol": "UMA",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "UNI",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "USTC",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "USUAL",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "VINE",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "VIRTUAL",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "VVV",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "W",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "WCT",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "WIF",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "WLD",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "WLFI",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "XAI",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "XLM",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "XMR",
+      "tickSize": 0.01
+    },
+    {
+      "symbol": "XPL",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "XRP",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "YGG",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "YZY",
+      "tickSize": 0.00001
+    },
+    {
+      "symbol": "ZEC",
+      "tickSize": 0.01
+    },
+    {
+      "symbol": "ZEN",
+      "tickSize": 0.0001
+    },
+    {
+      "symbol": "ZEREBRO",
+      "tickSize": 1e-7
+    },
+    {
+      "symbol": "ZETA",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "ZK",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "ZORA",
+      "tickSize": 0.000001
+    },
+    {
+      "symbol": "ZRO",
+      "tickSize": 0.0001
+    }
   ]
 }

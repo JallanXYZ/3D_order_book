@@ -10,7 +10,7 @@ export default class HyperliquidFeedHandler extends FeedHandler {
     onOpen(event: Event): void {
         this.ws().send(JSON.stringify({
             method: 'subscribe',
-            subscription: { type: 'l2Book', coin: this.getSymbol() }
+            subscription: { type: 'l2Book', coin: this.getSymbol(), nSigFigs: 5 }
         }))
         this.ws().send(JSON.stringify({
             method: 'subscribe',
