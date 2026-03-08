@@ -46,6 +46,39 @@ async function getBinance(): Promise<Instrument[]> {
   return instruments
 }
 
+async function getHyperliquid(): Promise<Instrument[]> {
+  console.log('Fetching Hyperliquid instruments...')
+  const [metaResponse, midsResponse] = await Promise.all([
+    fetch('https://api.hyperliquid.xyz/info', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ type: 'meta' }) }),
+    fetch('https://api.hyperliquid.xyz/info', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ type: 'allMids' }) }),
+  ])
+  const meta = await metaResponse.json()
+  const mids: Record<string, string> = await midsResponse.json()
+  const instruments: Instrument[] = []
+  for (const coin of meta.universe) {
+    if (coin.isDelisted) continue
+    const price = parseFloat(mids[coin.name] ?? '0')
+    if (price === 0) continue
+    const tickSize = tickSizeFromPrice(price)
+    instruments.push({ symbol: coin.name, tickSize })
+  }
+  instruments.sort((a, b) => a.symbol.localeCompare(b.symbol))
+  console.log(`Got ${instruments.length}`)
+  return instruments
+}
+
+function tickSizeFromPrice(price: number): number {
+  if (price >= 10000) return 1
+  if (price >= 1000)  return 0.1
+  if (price >= 100)   return 0.01
+  if (price >= 10)    return 0.001
+  if (price >= 1)     return 0.0001
+  if (price >= 0.1)   return 0.00001
+  if (price >= 0.01)  return 0.000001
+  if (price >= 0.001) return 0.0000001
+  return 0.00000001
+}
+
 async function getKraken(): Promise<Instrument[]> {
   console.log('Fetching Kraken instruments...')
   const response = await fetch('https://api.kraken.com/0/public/AssetPairs')
@@ -69,6 +102,7 @@ async function main() {
   file['BitMEX'] = await getBitMEX()
   file['Binance'] = await getBinance()
   file['Kraken'] = await getKraken()
+  file['Hyperliquid'] = await getHyperliquid()
 
   fs.writeFileSync('src/instruments.json', JSON.stringify(file, null, 2))
 }
